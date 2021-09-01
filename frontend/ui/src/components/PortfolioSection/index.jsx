@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import { TitleSection } from '../TitleSection'
-import { ButtonTheme } from '../ButtonElements';
+import api from '../apis/api';
 import DynamicIcon from '../DynamicIcon';
 import { 
         PortfolioSectionWrapper,
@@ -10,6 +10,7 @@ import {
         PortfolioTitle,
         PortfolioDescriptions,
         PortfolioButtonIcon,
+        PortfolioButton,
         PortfolioData
          } from './PortfolioSectionElements';
 import { SwiperSlide } from 'swiper/react';
@@ -19,50 +20,35 @@ import 'swiper/components/navigation/navigation.scss'
 import 'swiper/components/pagination/pagination.scss'
 
 
-const PortfolioSection = ({title,subtitle,img,alt,portfoliotitle,portfoliodescription,url}) => {
+const PortfolioSection = ({title,subtitle}) => {
   SwiperCore.use([Navigation, Pagination]);
 
-  const data = [
-    {
-      img:"aaa",
-      alt:"aaa",
-      title: "road1",
-      description: "aaaa1",
-      url:"aaa"
-    },
-    {
-      img:"aaa",
-      alt:"aaa",
-      title: "road1",
-      description: "aaaa1",
-      url:"aaa"
-    },
-    {
-      img:"aaa",
-      alt:"aaa",
-      title: "road1",
-      description: "aaaa1",
-      url:"aaa"
-    },
-  ];
+  const [projectsData,setProjectsData] = useState([]);
+
+  const fetchProjects  = async () =>{
+      const response = await api.get('/projects/')
+      setProjectsData(response.data)
+  }
+
+  useEffect(()=>{ fetchProjects() },[])
   
   return (
             <PortfolioSectionWrapper id="portfolio">
                 <TitleSection title={title} subtitle={subtitle} />
         
                 <PortfolioContainer navigation={true} pagination={true}>
-                        {data.map((portfolio, index) =>{
+                        {projectsData.map((portfolio, index) =>{
                           return(
                             <SwiperSlide key={ `slide_${ index }`}>
                                 <PortfolioContent>
                                 <PortfolioImg src={portfolio.img} alt={portfolio.alt} />
 
                                     <PortfolioData>
-                                        <PortfolioTitle>{portfolio.title}</PortfolioTitle>
+                                        <PortfolioTitle>{portfolio.name}</PortfolioTitle>
                                         <PortfolioDescriptions>{portfolio.description}</PortfolioDescriptions>
-                                        <ButtonTheme to='/' styles={"small"} href={portfolio.url} rel="noreferrer" target="_blank">Demo
+                                        <PortfolioButton styles={"small"} href={portfolio.github} rel="noreferrer" target="_blank">Show code
                                         <PortfolioButtonIcon><DynamicIcon icon={"FaArrowRight"} /></PortfolioButtonIcon>
-                                        </ButtonTheme>
+                                        </PortfolioButton>
                                     </PortfolioData>
                                 </PortfolioContent>
                             </SwiperSlide>

@@ -125,9 +125,31 @@ export const PortfolioDescriptions = styled.p`
   margin-bottom: var(--mb-0-75);
 `
 
-export const PortfolioButtonIcon = styled(ButtonIcon)`
-  ${ButtonTheme}:hover &{
-    transform: translateX(.25rem);
+export const PortfolioButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+  outline: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  justify-content: center;
+  transition: all .2s ease-in-out;
+  color: #fff;
+  background-color: ${props => props.theme.firstColor};
+
+  
+  &:hover{
+      transition: all .2s ease-in-out;
+      color: #fff;
+      background-color: ${props => props.theme.firstColorAlt};
   }
 `
 
+export const PortfolioButtonIcon = styled(ButtonIcon)`
+  ${PortfolioButton}:hover &{
+    transform: translateX(.25rem);
+  }
+`

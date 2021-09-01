@@ -63,7 +63,7 @@ const ServicesSection = ({title,subtitle}) => {
                     <ServicesTitle>{FirstColumn && FirstColumn.name}</ServicesTitle>
                 </div>
                 
-                <ButtonTheme to='/' styles={"link"} onClick={modal1} >
+                <ButtonTheme to='services' styles={"link"} onClick={modal1} >
                     View more
                     <ServicesButtonArrow />
                 </ButtonTheme>
@@ -90,7 +90,7 @@ const ServicesSection = ({title,subtitle}) => {
                     <ServicesTitle>{SecondColumn && SecondColumn.name}</ServicesTitle>
                 </div>
                 
-                <ButtonTheme to='/' styles={"link"} onClick={modal2} >
+                <ButtonTheme to='services' styles={"link"} onClick={modal2} >
                     View more
                     <ServicesButtonArrow />
                 </ButtonTheme>
@@ -117,7 +117,7 @@ const ServicesSection = ({title,subtitle}) => {
                     <ServicesTitle>{ThirdColumn && ThirdColumn.name}</ServicesTitle>
                 </div>
                 
-                <ButtonTheme to='/' styles={"link"} onClick={modal3} >
+                <ButtonTheme to='services' styles={"link"} onClick={modal3} >
                     View more
                     <ServicesButtonArrow />
                 </ButtonTheme>
