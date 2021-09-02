@@ -85,11 +85,11 @@ class HomePageSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = HomePage
-        fields = ['name', 'subtitles1', 'subtitles2', 'subtitles3', 'description', 'alt']
+        fields = ['name', 'subtitles1', 'subtitles2', 'subtitles3', 'description', 'alt', 'image']
 
 
 class YourProjectSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = YourProject
-        fields = ['title', 'description', 'alt']
+        fields = ['title', 'description', 'alt', 'image']

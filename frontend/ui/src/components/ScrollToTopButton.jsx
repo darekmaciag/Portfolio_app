@@ -13,7 +13,7 @@ const ButtonIcon = styled(FaArrowUp)`
 const UpButton = styled.i`
   position: fixed;
   right: 1rem;
-  bottom: ${({scrollNav}) => (scrollNav ? '5rem' : '-20%')};
+  bottom: ${({isOpen,scrollNav}) => (isOpen && scrollNav ? '15rem' : scrollNav ? '4rem' : '-20%')};
   background-color: ${props => props.theme.firstColor};
   opacity: .8;
   padding: 0 .3rem;
@@ -28,15 +28,15 @@ const UpButton = styled.i`
 `
   
 
-export function ScrollUpButton({scrollNav}) {
+export function ScrollUpButton({scrollNav, isOpen}) {
 
-    const toggleHome = () => {
-        scroll.scrollToTop();
-    }
+  const toggleHome = () => {
+      scroll.scrollToTop();
+  }
 
-  return (
-      <UpButton scrollNav={scrollNav} onClick={toggleHome}>
-          <ButtonIcon />
-      </UpButton>
-  );
+return (
+    <UpButton scrollNav={scrollNav} isOpen={isOpen} onClick={toggleHome}>
+        <ButtonIcon />
+    </UpButton>
+);
 }

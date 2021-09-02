@@ -107,7 +107,7 @@ const Navbar = () => {
                     </NavToggle>
                 </NavButtons>
             </Nav>
-            <ScrollUpButton scrollNav={scrollNav} />
+            <ScrollUpButton scrollNav={scrollNav} isOpen={isOpen} />
         </NavHeader>
     );
 };
