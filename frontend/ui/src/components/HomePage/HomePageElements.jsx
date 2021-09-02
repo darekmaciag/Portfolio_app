@@ -11,6 +11,7 @@ export const HeroBg = styled.div`
     width: 100%;
     height: 100%;
     overflow: hidden;
+    filter: blur(3px);
     z-index: -10;
 
     :before {

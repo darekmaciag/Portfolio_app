@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import DynamicIcon from '../DynamicIcon';
 import api from '../apis/api';
-import Video from '../videos/video3.mp4'
+import Video from '../videos/video.mp4'
 import { HomeSection,
         HeroBg,
         VideoBg,
