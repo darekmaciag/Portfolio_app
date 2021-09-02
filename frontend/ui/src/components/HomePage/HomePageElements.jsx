@@ -11,7 +11,6 @@ export const HeroBg = styled.div`
     width: 100%;
     height: 100%;
     overflow: hidden;
-    filter: blur(3px);
     z-index: -10;
 
     :before {
@@ -31,6 +30,7 @@ export const HeroBg = styled.div`
 export const VideoBg = styled.video`
     width: 100%;
     height: 100%;
+    filter: blur(3px);
     -o-object-fit: cover;
     object-fit: cover;
     background: #232a34;
