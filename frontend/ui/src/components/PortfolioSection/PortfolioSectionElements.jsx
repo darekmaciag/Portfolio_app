@@ -1,4 +1,4 @@
-import { ButtonIcon,ButtonTheme } from '../ButtonElements';
+import { ButtonIcon } from '../ButtonElements';
 import styled from 'styled-components';
 import { Swiper } from 'swiper/react';
 import 'swiper/components/navigation/navigation.scss'

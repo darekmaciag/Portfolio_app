@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import HomePage from '../components/HomePage';
 import AboutSection from '../components/AboutSection';
 import SkillsSection from '../components/SkillsSection';
@@ -17,7 +16,6 @@ const Home = () => {
 
     return (
         <>
-            <Navbar />
             <HomePage />
             <AboutSection {...AboutTitle}/>
             <SkillsSection {...SkillsTitle}/>

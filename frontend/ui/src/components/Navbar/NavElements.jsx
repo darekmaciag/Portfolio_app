@@ -166,3 +166,19 @@ export const NavLogo = styled.i`
     color: ${props => props.theme.firstColor};
   }
 `
+
+export const ThemeButton = styled.div`
+  font-size: 1.25rem;
+  color: ${props => props.theme.titleColor};
+  margin-right: var(--mb-1);
+  cursor: pointer;
+
+  &:hover{
+    color: ${props => props.theme.firstColor};
+  }
+
+  @media screen and (min-width: 768px){
+  margin: 0;
+  margin-left: 2.5rem;
+  }
+`

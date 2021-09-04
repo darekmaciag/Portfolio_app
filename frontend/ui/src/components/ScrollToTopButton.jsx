@@ -13,7 +13,6 @@ const ButtonIcon = styled(FaArrowUp)`
 const UpButton = styled.i`
   position: fixed;
   right: 1rem;
-  bottom: ${({isOpen,scrollNav}) => (isOpen && scrollNav ? '15rem' : scrollNav ? '4rem' : '-20%')};
   background-color: ${props => props.theme.firstColor};
   opacity: .8;
   padding: 0 .3rem;
@@ -21,11 +20,16 @@ const UpButton = styled.i`
   z-index: var(--z-tooltip);
   transition: .4s;
   cursor: pointer;
-
+  bottom: ${({scrollNav}) => (scrollNav ? '4rem' : '-20%')};
+  
   &:hover{
     background-color: ${props => props.theme.firstColorAlt};
   }
-`
+
+  @media screen and (max-width: 767px){
+    bottom: ${({isOpen,scrollNav}) => (isOpen && scrollNav ? '15rem' : scrollNav ? '4rem' : '-20%')};
+  }
+  `
   
 
 export function ScrollUpButton({scrollNav, isOpen}) {
