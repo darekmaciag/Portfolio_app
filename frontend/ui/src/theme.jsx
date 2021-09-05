@@ -1,5 +1,5 @@
 export const hue = {
-    main: 43
+    main: 240
 }
 
 
