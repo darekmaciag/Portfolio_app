@@ -29,14 +29,14 @@ class AboutInfoSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AboutInfo
-        fields = ['about_description', 'image', 'image_alt', 'info_title1', 'info_subtitle1', 'info_title2', 'info_subtitle2', 'info_title3', 'info_subtitle3']
+        fields = ['about_description', 'image', 'image_alt', 'info_title1', 'info_subtitle1', 'info_subtitle1a', 'info_title2', 'info_subtitle2', 'info_subtitle2a', 'info_title3', 'info_subtitle3' 'info_subtitle3a',]
 
 
 class ServiceInfoSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ServiceInfo
-        fields = ['id', 'name', 'icon']
+        fields = ['id', 'name', 'name2', 'icon']
 
 
 class ServiceDetailSerializer(serializers.ModelSerializer):
@@ -71,14 +71,14 @@ class SchollDetailSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = SchollDetail
-        fields = ['id', 'name', 'subtitle', 'date']
+        fields = ['id', 'name', 'subtitle', 'major', 'date']
 
 
 class WorkDetailSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = WorkDetail
-        fields = ['id', 'name', 'subtitle', 'date']
+        fields = ['id', 'name', 'subtitle', 'major', 'date']
 
 
 class HomePageSerializer(serializers.ModelSerializer):

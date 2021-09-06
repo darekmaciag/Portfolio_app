@@ -24,7 +24,7 @@ export default function QualificationsDetail(props){
                     <QualificationData key={index}  evenCol={(index % 2 === 0) ? false : true }>
                     <Column1>
                         <QualificationTitle>{place.name}</QualificationTitle>
-                        <QualificationSubtitle>{place.subtitle}</QualificationSubtitle>
+                        <QualificationSubtitle>{place.subtitle}<br />{place.major}</QualificationSubtitle>
                         <QualificationCalendar>
                             <QualificationCalendarIcon />{place.date}
                         </QualificationCalendar>

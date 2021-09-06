@@ -1,28 +1,28 @@
 export const AboutTitle = {
     title: 'About',
-    subtitle: 'test',
+    subtitle: 'My introduction',
 }
 export const SkillsTitle = {
     title: 'Skills',
-    subtitle: 'test',
+    subtitle: 'My technical level',
 }
 export const QualificationsTitle = {
     title: 'Qualifications',
-    subtitle: 'test',
+    subtitle: 'My personal journey',
 }
 export const ServicesTitle = {
     title: 'Services',
-    subtitle: 'test',
+    subtitle: 'What i can',
 }
 export const PortfolioTitle = {
     title: 'Portfolio',
-    subtitle: 'test',
+    subtitle: 'My works',
 }
 export const TestimonialsTitle = {
     title: 'Testimonials',
-    subtitle: 'test',
+    subtitle: 'My client saying',
 }
 export const ContactTitle = {
     title: 'Contact',
-    subtitle: 'test',
+    subtitle: 'Contact me',
 }

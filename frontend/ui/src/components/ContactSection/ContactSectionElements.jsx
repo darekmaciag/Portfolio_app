@@ -46,17 +46,19 @@ export const ContactSendIcon = styled(FaPaperPlane)`
   transition: .3s;
 `
 
-export const Button = styled.a`
+export const Button = styled.button`
   display: inline-block;
   background-color: ${props => props.theme.firstColor};
   color: #fff;
   padding: 1rem;
   border-radius: .5rem;
+  font-size: 1rem;
   font-weight: var(--font-medium);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   cursor: pointer;
+  border: none;
 
   &:hover{
     background-color: ${props => props.theme.firstColorAlt};
@@ -124,6 +126,3 @@ export const ContactInputs = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
 `
-
-
-

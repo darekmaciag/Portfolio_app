@@ -22,7 +22,7 @@ class SkillInfo(models.Model):
     id = models.BigAutoField(primary_key=True)
     name = models.CharField(max_length=30)
     description = models.TextField(max_length=200, blank=True)
-    icon = models.TextField(max_length=20, blank=True)
+    icon = models.CharField(max_length=20, blank=True)
 
     def __str__(self):
         return self.name
@@ -45,10 +45,13 @@ class AboutInfo(models.Model):
     image_alt = models.TextField(max_length=50, blank=True)
     info_title1 = models.CharField(max_length=10, blank=True)
     info_subtitle1 = models.CharField(max_length=50, blank=True)
+    info_subtitle1a = models.CharField(max_length=50, blank=True)
     info_title2 = models.CharField(max_length=10, blank=True)
     info_subtitle2 = models.CharField(max_length=50, blank=True)
+    info_subtitle2a = models.CharField(max_length=50, blank=True)
     info_title3 = models.CharField(max_length=10, blank=True)
     info_subtitle3 = models.CharField(max_length=50, blank=True)
+    info_subtitle3a = models.CharField(max_length=50, blank=True)
 
     def __str__(self):
         return self.info_title1
@@ -56,8 +59,9 @@ class AboutInfo(models.Model):
 
 class SchollDetail(models.Model):
 
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=80)
     subtitle = models.TextField(max_length=50, blank=True)
+    major = models.TextField(max_length=50, blank=True)
     date = models.CharField(max_length=20, blank=True)
 
     def __str__(self):
@@ -68,6 +72,7 @@ class WorkDetail(models.Model):
 
     name = models.CharField(max_length=50)
     subtitle = models.TextField(max_length=50, blank=True)
+    major = models.TextField(max_length=50, blank=True)
     date = models.CharField(max_length=20, blank=True)
 
     def __str__(self):
@@ -77,6 +82,7 @@ class WorkDetail(models.Model):
 class ServiceInfo(models.Model):
 
     name = models.CharField(max_length=30)
+    name2 = models.CharField(max_length=30)
     icon = models.CharField(max_length=20)
 
     def __str__(self):

@@ -39,17 +39,17 @@ const AboutSection = ({title, subtitle}) => {
             <AboutData>
                 <AboutDescription>{About && About.about_description}</AboutDescription>
                 <AboutInfo>
-                    <div>
+                <div>
                         <AboutInfoTitle>{About && About.info_title1}</AboutInfoTitle>
-                        <AboutInfoName>{About && About.info_subtitle1}</AboutInfoName>
+                        <AboutInfoName>{About && About.info_subtitle1}<br />{About && About.info_subtitle1a}</AboutInfoName>
                     </div>
                     <div>
                         <AboutInfoTitle>{About && About.info_title2}</AboutInfoTitle>
-                        <AboutInfoName>{About && About.info_subtitle2}</AboutInfoName>
+                        <AboutInfoName>{About && About.info_subtitle2}<br />{About && About.info_subtitle2a}</AboutInfoName>
                     </div>
                     <div>
                         <AboutInfoTitle>{About && About.info_title3}</AboutInfoTitle>
-                        <AboutInfoName>{About && About.info_subtitle3}</AboutInfoName>
+                        <AboutInfoName>{About && About.info_subtitle3}<br />{About && About.info_subtitle3a}</AboutInfoName>
                     </div>
                 </AboutInfo>
 

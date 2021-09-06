@@ -126,7 +126,7 @@ export const HomeSvg = styled.svg`
 `
 
 export const ImageBlob = styled.image`
-  width: 170px;
+  width: 200px;
 `
 
 

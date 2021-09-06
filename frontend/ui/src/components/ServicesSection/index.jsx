@@ -60,7 +60,7 @@ const ServicesSection = ({title,subtitle}) => {
             <ServiceContent>
                 <div>
                     <ServicesIcon><DynamicIcon icon={FirstColumn && FirstColumn.icon} /></ServicesIcon>
-                    <ServicesTitle>{FirstColumn && FirstColumn.name}</ServicesTitle>
+                    <ServicesTitle>{FirstColumn && FirstColumn.name}<br />{FirstColumn && FirstColumn.name2}</ServicesTitle>
                 </div>
                 
                 <ButtonTheme to='services' styles={"link"} onClick={modal1} >
@@ -70,7 +70,7 @@ const ServicesSection = ({title,subtitle}) => {
                 
                 <ServicesModal1 openModal1={openModal1}>
                     <ServicesModalContent>
-                        <ServicesModalTitle>{FirstColumn && FirstColumn.name}</ServicesModalTitle>
+                        <ServicesModalTitle>{FirstColumn && FirstColumn.name}<br />{FirstColumn && FirstColumn.name2}</ServicesModalTitle>
                         <ServicesModalClose onClick={modal1}><FaTimes /></ServicesModalClose>
 
                         <ServicesModalGrid>
@@ -87,7 +87,7 @@ const ServicesSection = ({title,subtitle}) => {
             <ServiceContent>
                 <div>
                     <ServicesIcon><DynamicIcon icon={SecondColumn && SecondColumn.icon} /></ServicesIcon>
-                    <ServicesTitle>{SecondColumn && SecondColumn.name}</ServicesTitle>
+                    <ServicesTitle>{SecondColumn && SecondColumn.name}<br />{SecondColumn && SecondColumn.name2}</ServicesTitle>
                 </div>
                 
                 <ButtonTheme to='services' styles={"link"} onClick={modal2} >
@@ -97,7 +97,7 @@ const ServicesSection = ({title,subtitle}) => {
                 
                 <ServicesModal2 openModal2={openModal2}>
                     <ServicesModalContent>
-                        <ServicesModalTitle>{SecondColumn && SecondColumn.name}</ServicesModalTitle>
+                        <ServicesModalTitle>{SecondColumn && SecondColumn.name}<br />{SecondColumn && SecondColumn.name2}</ServicesModalTitle>
                         <ServicesModalClose onClick={modal2}><FaTimes /></ServicesModalClose>
 
                         <ServicesModalGrid>
@@ -114,7 +114,7 @@ const ServicesSection = ({title,subtitle}) => {
             <ServiceContent>
                 <div>
                     <ServicesIcon><DynamicIcon icon={ThirdColumn && ThirdColumn.icon} /></ServicesIcon>
-                    <ServicesTitle>{ThirdColumn && ThirdColumn.name}</ServicesTitle>
+                    <ServicesTitle>{ThirdColumn && ThirdColumn.name}<br />{ThirdColumn && ThirdColumn.name2}</ServicesTitle>
                 </div>
                 
                 <ButtonTheme to='services' styles={"link"} onClick={modal3} >
@@ -124,7 +124,7 @@ const ServicesSection = ({title,subtitle}) => {
                 
                 <ServicesModal3 openModal3={openModal3}>
                     <ServicesModalContent>
-                        <ServicesModalTitle>{ThirdColumn && ThirdColumn.name}</ServicesModalTitle>
+                        <ServicesModalTitle>{ThirdColumn && ThirdColumn.name}<br />{ThirdColumn && ThirdColumn.name2}</ServicesModalTitle>
                         <ServicesModalClose onClick={modal3}><FaTimes /></ServicesModalClose>
 
                         <ServicesModalGrid>
