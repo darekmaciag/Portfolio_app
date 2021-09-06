@@ -29,7 +29,7 @@ class AboutInfoSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AboutInfo
-        fields = ['about_description', 'image', 'image_alt', 'info_title1', 'info_subtitle1', 'info_subtitle1a', 'info_title2', 'info_subtitle2', 'info_subtitle2a', 'info_title3', 'info_subtitle3' 'info_subtitle3a',]
+        fields = ['about_description', 'image', 'image_alt', 'info_title1', 'info_subtitle1', 'info_subtitle1a', 'info_title2', 'info_subtitle2', 'info_subtitle2a', 'info_title3', 'info_subtitle3' 'info_subtitle3a', 'download']
 
 
 class ServiceInfoSerializer(serializers.ModelSerializer):

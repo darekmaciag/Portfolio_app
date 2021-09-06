@@ -52,6 +52,7 @@ class AboutInfo(models.Model):
     info_title3 = models.CharField(max_length=10, blank=True)
     info_subtitle3 = models.CharField(max_length=50, blank=True)
     info_subtitle3a = models.CharField(max_length=50, blank=True)
+    download = models.FileField(upload_to="download/",blank=True)
 
     def __str__(self):
         return self.info_title1

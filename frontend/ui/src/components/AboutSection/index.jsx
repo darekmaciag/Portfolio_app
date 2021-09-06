@@ -10,8 +10,9 @@ import {
         AboutInfoTitle,
         AboutInfoName,
         AboutButtons,
+        DownloadButton
          } from './AboutSectionElements';
-import { ButtonTheme,ButtonIcon } from '../ButtonElements';
+import { ButtonIcon } from '../ButtonElements';
 import DynamicIcon from '../DynamicIcon';
 import api from '../apis/api';
 
@@ -54,9 +55,9 @@ const AboutSection = ({title, subtitle}) => {
                 </AboutInfo>
 
                 <AboutButtons>
-                    <ButtonTheme to='/'>Download CV
+                    <DownloadButton href={About && About.download} download={About && About.download}>Download CV
                         <ButtonIcon><DynamicIcon icon={"FaDownload"}></DynamicIcon></ButtonIcon>
-                    </ButtonTheme>
+                    </DownloadButton>
                 </AboutButtons>
             </AboutData>
         </AboutContainer>

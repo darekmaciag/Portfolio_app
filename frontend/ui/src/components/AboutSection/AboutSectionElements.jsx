@@ -90,3 +90,25 @@ export const AboutButtons = styled.div`
     justify-content: initial;
   }
 `
+
+export const DownloadButton = styled.a`
+  display: inline-block;
+  align-items: center;
+  padding:  1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+  outline: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  justify-content: center;
+  transition: all .2s ease-in-out;
+  color: #fff;
+  background-color: ${props => props.theme.firstColor};
+
+  
+  &:hover {
+      transition: all .2s ease-in-out ;
+      background-color:  ${props => props.theme.firstColorAlt};
+      }
+`
