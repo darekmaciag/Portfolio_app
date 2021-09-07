@@ -82,7 +82,7 @@ const HomePageElements = () => {
                             wrapper="p"
                         />
                     </HomeSubtitle>
-                    <HomeDescriptions>{Home && Home.descriptions}</HomeDescriptions>
+                    <HomeDescriptions>{Home && Home.description}</HomeDescriptions>
                     <ButtonTheme styles={'flex'} to="contact">
                         Contact Me <ButtonIcon><DynamicIcon icon={"FaRegPaperPlane"} /></ButtonIcon>
                     </ButtonTheme>
