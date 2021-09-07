@@ -55,7 +55,7 @@ class AboutInfo(models.Model):
     download = models.FileField(upload_to="download/",blank=True)
 
     def __str__(self):
-        return self.info_title1
+        return self.image_alt
 
 
 class SchollDetail(models.Model):
