@@ -79,12 +79,13 @@ export const QualificationWorkIcon = styled(FaBuilding)`
 
 export const QualificationSections = styled.div`
   @media screen and (min-width: 568px){
-    display: grid;
     grid-template-columns: .6fr;
     justify-content: center;
   }
   
   @media screen and (min-width: 768px){
+    margin-left: 2rem;
+    margin-right: 2rem;
     grid-template-columns: .5fr;
   }
 `
