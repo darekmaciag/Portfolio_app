@@ -41,7 +41,7 @@ const PortfolioSection = ({title,subtitle}) => {
                           return(
                             <SwiperSlide key={ `slide_${ index }`}>
                                 <PortfolioContent>
-                                <PortfolioImg src={portfolio.img} alt={portfolio.alt} />
+                                <PortfolioImg src={portfolio.image} alt={portfolio.alt} />
 
                                     <PortfolioData>
                                         <PortfolioTitle>{portfolio.name}</PortfolioTitle>

@@ -17,12 +17,17 @@ export const PortfolioContainer = styled(Swiper)`
   max-width: 768px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
-  height: 200px;
+  height: 250px;
     
 
   @media screen and (max-width: 350px){
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
+  }
+
+  @media screen and (max-width: 568px){
+    height: 400px;
+    justify-content: center;
   }
 
   @media screen and (min-width: 768px){

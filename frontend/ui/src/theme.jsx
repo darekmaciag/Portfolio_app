@@ -1,5 +1,5 @@
 export const hue = {
-    main: 240
+    main: 195
 }
 
 
@@ -20,6 +20,12 @@ export const lightTheme = {
     scrollBarColor: 'hsl('+ hue.main +', 60%, 95%)',
     scrollThumbColor: 'hsl('+ hue.main +', 60%, 95%)',
 
+    color1: 'hsl('+ hue.main +', 69%, 61%)',
+    color2: 'hsl('+ hue.main +', 67%, 73%)',
+    color3: 'hsl('+ hue.main +', 67%, 82%)',
+    color4: 'hsl('+ hue.main +', 66%, 91%)',
+    color5: 'hsl('+ hue.main +', 60%, 99%)',
+
 }
 
 export const darkTheme = {
@@ -38,6 +44,12 @@ export const darkTheme = {
     textColorLight: 'hsl('+ hue.main +', 8%, 65%)',
     scrollBarColor: 'hsl('+ hue.main +', 100%, 20%)',
     scrollThumbColor: 'hsl('+ hue.main +', 100%, 20%)',
+
+    color1: 'hsl('+ hue.main +', 69%, 61%)',
+    color2: 'hsl('+ hue.main +', 42%, 48%)',
+    color3: 'hsl('+ hue.main +', 39%, 35%)',
+    color4: 'hsl('+ hue.main +', 35%, 23%)',
+    color5: 'hsl('+ hue.main +', 28%, 12%)',
 }
 
 export const themes = {

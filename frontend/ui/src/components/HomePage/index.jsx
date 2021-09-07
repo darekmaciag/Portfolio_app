@@ -1,10 +1,9 @@
 import React, {useState,useEffect} from 'react';
 import DynamicIcon from '../DynamicIcon';
 import api from '../apis/api';
-import Video from '../videos/video.mp4'
+// import Video from '../videos/video.mp4'
 import { HomeSection,
-        HeroBg,
-        VideoBg,
+
         HomeContainer,
         HomeContent,
         HomeSocial,
@@ -20,10 +19,12 @@ import { HomeSection,
         HomeScrollMouse,
         HomeScrollName,
         HomeScrollArrow,
-        HomeSocialIcon, 
+        HomeSocialIcon,
+        ParticleBg
         } from './HomePageElements';
 import { ButtonTheme,ButtonIcon } from '../ButtonElements';
 import Typical from 'react-typical'
+import MyParticle from './Particles';
 
 
 const HomePageElements = () => {
@@ -47,9 +48,9 @@ const HomePageElements = () => {
 
     return (
         <HomeSection id="home">
-            <HeroBg>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
-            </HeroBg>
+        <ParticleBg>
+            <MyParticle />
+        </ParticleBg>
         <HomeContainer>
             <HomeContent>
                 <HomeSocial>
@@ -62,19 +63,13 @@ const HomePageElements = () => {
                     })}
                 </HomeSocial>
                 <HomeImg>
-                    <HomeSvg viewBox="0 0 200 187">
+                <HomeSvg viewBox="-105 -105 210 210">
                         <mask id="mask0" mask-type="alpha">
-                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            <path d="M-103.988209,-0.656077C-105.300364,-80.697475,-83.649821,-104.768424,0,-104.378317C83.649821,-103.98821,104.644287,-85.290014,104.378317,0C104.112347,85.290014,87.586284,103.332132,0,104.378317C-87.586284,105.424502,-102.676055,84.633937,-103.988209,-0.656077Z"/>
                         </mask>
                         <g mask="url(#mask0)">
-                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                            <ImageBlob href={Home && Home.image} alt={Home && Home.alt} x='0' y='-6' />
+                            <path d="M-103.988209,-0.656077C-105.300364,-80.697475,-83.649821,-104.768424,0,-104.378317C83.649821,-103.98821,104.644287,-85.290014,104.378317,0C104.112347,85.290014,87.586284,103.332132,0,104.378317C-87.586284,105.424502,-102.676055,84.633937,-103.988209,-0.656077Z"/>
+                            <ImageBlob href={Home && Home.image} alt={Home && Home.alt} x='-105' y='-106' />
                         </g>
                     </HomeSvg>
                 </HomeImg>

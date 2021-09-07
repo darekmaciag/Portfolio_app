@@ -51,6 +51,7 @@ export const HomeContainer = styled.div`
   margin-right: var(--mb-1-5);
   display: grid;
   gap: 1.5rem;
+  z-index: 1;
 
   @media screen and (max-width: 350px){
     margin-left: var(--mb-1);
@@ -70,6 +71,7 @@ export const HomeContent = styled.div`
    align-items: center;
    display: grid;
    gap: 1.5rem;
+   z-index: 2;
 
   @media screen and (max-width: 350px){
     grid-template-columns: .25fr 3fr;
@@ -126,12 +128,13 @@ export const HomeSvg = styled.svg`
 `
 
 export const ImageBlob = styled.image`
-  width: 200px;
+  width: 210px;
 `
 
 
 export const HomeData = styled.div`
  grid-column: 1/3;
+ z-index: 3;
 
  @media screen and (min-width: 568px){
     grid-column: initial;
@@ -156,6 +159,7 @@ export const HomeDescriptions = styled.p`
 
 export const HomeScroll = styled.div`
   display: none;
+  z-index: 2;
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -193,4 +197,16 @@ export const HomeScrollArrow = styled(FaArrowDown)`
  font-size: 1.25;
 `
 
-
+export const ParticleBg = styled.div`
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  overflow: visible;
+  background-image: linear-gradient(to left, ${props => props.theme.color1}, ${props => props.theme.color2}, ${props => props.theme.color3}, ${props => props.theme.color4}, ${props => props.theme.color5});
+  z-index: 0;
+`
