@@ -85,6 +85,7 @@ export const AboutInfoName = styled.span`
 export const AboutButtons = styled.div`
   display: flex;
   justify-content: center;
+  display: none;
 
   @media screen and (min-width: 768px){
     justify-content: initial;

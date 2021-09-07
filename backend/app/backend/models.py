@@ -93,7 +93,7 @@ class ServiceInfo(models.Model):
 class ServiceDetail(models.Model):
 
     service = models.ForeignKey(ServiceInfo, on_delete=models.CASCADE)
-    name = models.CharField(max_length=50)
+    name = models.TextField(max_length=200)
 
     def __str__(self):
         return self.name
