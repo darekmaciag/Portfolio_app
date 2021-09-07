@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react';
-import { FaRegCheckCircle, FaTimes } from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 import { ButtonTheme } from '../ButtonElements';
 import { TitleSection } from '../TitleSection';
 import api from '../apis/api';
@@ -18,9 +18,7 @@ import {
         ServicesModalContent,
         ServicesModalTitle,
         ServicesModalClose,
-        ServicesModalGrid,
-        ServicesModalIcon,
-        ServicesModalService
+        ServicesModalGrid
      } from './ServicesSectionElements';
 
 const ServicesSection = ({title,subtitle}) => {
@@ -74,10 +72,7 @@ const ServicesSection = ({title,subtitle}) => {
                         <ServicesModalClose onClick={modal1}><FaTimes /></ServicesModalClose>
 
                         <ServicesModalGrid>
-                            <ServicesModalService>
-                                <ServicesModalIcon><FaRegCheckCircle /></ServicesModalIcon>
                                 {ServicesDetail(FirstColumn && FirstColumn.id)}
-                            </ServicesModalService>
                         </ServicesModalGrid>
 
                     </ServicesModalContent>
@@ -101,10 +96,7 @@ const ServicesSection = ({title,subtitle}) => {
                         <ServicesModalClose onClick={modal2}><FaTimes /></ServicesModalClose>
 
                         <ServicesModalGrid>
-                            <ServicesModalService>
-                                <ServicesModalIcon><FaRegCheckCircle /></ServicesModalIcon>
                                 {ServicesDetail(SecondColumn && SecondColumn.id)}
-                            </ServicesModalService>
                         </ServicesModalGrid>
 
                     </ServicesModalContent>
@@ -128,10 +120,7 @@ const ServicesSection = ({title,subtitle}) => {
                         <ServicesModalClose onClick={modal3}><FaTimes /></ServicesModalClose>
 
                         <ServicesModalGrid>
-                            <ServicesModalService>
-                                <ServicesModalIcon><FaRegCheckCircle /></ServicesModalIcon>
                                 {ServicesDetail(ThirdColumn && ThirdColumn.id)}
-                            </ServicesModalService>
                         </ServicesModalGrid>
 
                     </ServicesModalContent>

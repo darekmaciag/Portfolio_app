@@ -1,5 +1,8 @@
 import React, {useEffect, useState} from "react";
-import { ServicesModalDescription } from './ServicesSectionElements';
+import { FaRegCheckCircle } from 'react-icons/fa';
+import { ServicesModalService,
+        ServicesModalDescription,
+        ServicesModalIcon } from './ServicesSectionElements';
 import api from '../apis/api';
 
 
@@ -17,7 +20,10 @@ export default function ServicesDetail(props){
         servicesDetailInfo.map((service, index) => {
             if (service.service === props){
                 return(
-                    <ServicesModalDescription key={index}>{service.name}</ServicesModalDescription>
+                    <ServicesModalService key={index}>
+                        <ServicesModalIcon><FaRegCheckCircle /></ServicesModalIcon>
+                        <ServicesModalDescription>{service.name}</ServicesModalDescription>
+                    </ServicesModalService>
                 )
             } else{
                 return(null
