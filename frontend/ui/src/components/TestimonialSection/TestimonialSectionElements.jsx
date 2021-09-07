@@ -7,6 +7,7 @@ import 'swiper/swiper.scss';
 
 export const TestimonialSectionWrapper = styled.section`
   padding: 2rem 0 4rem;
+  display: none;
 
   @media screen and (min-width: 768px){
     padding: 6rem 0 2rem;
