@@ -11,7 +11,6 @@ export const HeroBg = styled.div`
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -10;
 
     :before {
       content: '';
@@ -23,7 +22,6 @@ export const HeroBg = styled.div`
       background: linear-gradient(${props => props.theme.vidbg1}, ${props => props.theme.vidbg2});
       mix-blend-mode: multiply;
       opacity: 0.75;
-      z-index: 2;
     }
 `
 
@@ -51,7 +49,6 @@ export const HomeContainer = styled.div`
   margin-right: var(--mb-1-5);
   display: grid;
   gap: 1.5rem;
-  z-index: 1;
 
   @media screen and (max-width: 350px){
     margin-left: var(--mb-1);
@@ -71,7 +68,6 @@ export const HomeContent = styled.div`
    align-items: center;
    display: grid;
    gap: 1.5rem;
-   z-index: 2;
 
   @media screen and (max-width: 350px){
     grid-template-columns: .25fr 3fr;
@@ -98,6 +94,7 @@ export const HomeSocial = styled.div`
 export const HomeSocialIcon = styled.a`
   font-size: 1.2rem;
   color: ${props => props.theme.firstColor};
+  z-index: 1;
 
   &:hover{
     color: ${props => props.theme.firstColorAlt};
@@ -105,6 +102,7 @@ export const HomeSocialIcon = styled.a`
 `
 
 export const HomeImg = styled.div`
+  z-index: 1;
   @media screen and (min-width: 568px){
     order: 1;
     justify-self: center;
@@ -134,7 +132,7 @@ export const ImageBlob = styled.image`
 
 export const HomeData = styled.div`
  grid-column: 1/3;
- z-index: 3;
+ z-index: 1;
 
  @media screen and (min-width: 568px){
     grid-column: initial;
@@ -159,7 +157,7 @@ export const HomeDescriptions = styled.p`
 
 export const HomeScroll = styled.div`
   display: none;
-  z-index: 2;
+  z-index: 1;
 
   @media screen and (min-width: 768px) {
     display: block;
